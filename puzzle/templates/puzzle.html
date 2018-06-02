@@ -1,0 +1,9 @@
+<form method='GET' action=''>
+<input type='text' name='q' placeholder='Search posts'/>
+<input type='submit' value='Search' />
+</form>
+{% for puz in puzzle %}
+{% for p in puz %}
+{{ p }}
+{% endfor %}<br>
+{% endfor %}
